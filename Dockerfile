@@ -21,3 +21,5 @@ ENV REDIS=redis_server:6379
 
 # # Command to run the Flask application
 CMD ["/usr/bin/supervisord"]
+# docker run -d  --network vote --name redis_server redis 
+# docker rm -f `docker ps -a -q`
