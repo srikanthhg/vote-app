@@ -18,8 +18,9 @@ EXPOSE 5000
 # ENV FLASK_RUN_HOST=0.0.0.0
 # ENV FLASK_RUN_PORT=5000
 ENV REDIS=redis_server:6379
-ENV ALLOW_EMPTY_PASSWORD=yes
+
 # # Command to run the Flask application
 CMD ["/usr/bin/supervisord"]
 # docker run -d  --network vote --name redis_server redis 
 # docker rm -f `docker ps -a -q`
+# docker run -p 80:5000 --network vote vote
