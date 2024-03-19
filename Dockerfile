@@ -20,7 +20,8 @@ EXPOSE 5000
 ENV REDIS=redis_server:6379
 
 # # Command to run the Flask application
-CMD ["/usr/bin/supervisord"]
+#CMD ["/usr/bin/supervisord"]
+CMD ["flask", "run"]
 # docker run -d  --network vote --name redis_server redis 
 # docker rm -f `docker ps -a -q`
 # docker run -p 80:5000 --network vote vote
