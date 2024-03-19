@@ -1,2 +1,0 @@
-FROM redis
-ENV ALLOW_EMPTY_PASSWORD=yes

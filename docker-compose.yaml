@@ -14,4 +14,4 @@ services:
     environment:
       REDIS: redis_server
     ports:
-        - "8080:80"
+        - "80:5000"
