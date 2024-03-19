@@ -9,6 +9,7 @@ services:
         - "6379:6379"
 
   azure-vote-front:
+    build: .
     image: vote:v1
     container_name: vote
     environment:
