@@ -16,7 +16,7 @@ EXPOSE 5000
 # # Set environment variables for Flask application
 ENV FLASK_APP=main.py
 ENV FLASK_RUN_HOST=0.0.0.0
-# ENV FLASK_RUN_PORT=5000
+ENV FLASK_RUN_PORT=5000
 ENV REDIS=redis_server:6379
 
 # # Command to run the Flask application
